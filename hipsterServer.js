@@ -3,13 +3,13 @@ var port = 3000;
 var fs = require('fs');
 var chalk = require("chalk");
 
-// var date;
-// var topic;
-// var Info = function(first, surname, email){
-// 	this.first_name = first;
-// 	this.surname = surname;
-// 	this.email = email;
-// };
+var date;
+var topic;
+var Info = function(first, surname, email){
+	this.first_name = first;
+	this.surname = surname;
+	this.email = email;
+};
 
 var server = net.createServer(function(socket) {
 
@@ -44,7 +44,7 @@ var server = net.createServer(function(socket) {
 
 	socket.on("data", function(data){
 		var input = data.toString().trim().split(" ");
-		if (input[0].toUpperCase()==="RSVP" && input.length === 4 && input[3].search('@') != -1 && date != undefined){
+		if (input[0].toUpperCase()==="RSVP" && input.length === 4 && input[3].search('@') != -1 && date != "[]"){
 			fs.readFile("attendees.json", function(err, data){
 				if (err) {
 					console.log(err);
@@ -77,7 +77,6 @@ var server = net.createServer(function(socket) {
 					console.log(err);
 				} else {
 					var attendees = JSON.parse(data);
-						console.log(attendees);
 					socket.write("There are currently " + attendees.length +" attendee(s). Here's their info: " + data.toString());
 				}
 			});
@@ -96,8 +95,8 @@ var server = net.createServer(function(socket) {
 			});
 			socket.write("Your date has been set to: " + date + ".\n The topic has been set to: "+ topic + ".")
 		} else if (input[0]==="2556//clear/rsvps//") {
-			var attendeesJson = [];
-			fs.writeFile("chathistory.json", attendeesJson, function(err){
+			var attendeesJson = JSON.stringify([]);
+			fs.writeFile("attendees.json", attendeesJson, function(err){
 				if (err){
 					console.log(err);
 				} else {
