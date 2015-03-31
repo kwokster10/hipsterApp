@@ -1,0 +1,23 @@
+{
+  "name": "hipsterApp",
+  "version": "1.0.0",
+  "description": "### This app was created to faciliate monthly meetups in the dev community in Carroll Gardens. If you would like to sign up, connect via telenet throuh IP addresss: 45.55.155.149 and port 3000.",
+  "main": "hipsterServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwokster10/hipsterApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwokster10/hipsterApp/issues"
+  },
+  "homepage": "https://github.com/kwokster10/hipsterApp",
+  "dependencies": {
+    "chalk": "^1.0.0"
+  },
+  "devDependencies": {}
+}
