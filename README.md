@@ -10,7 +10,7 @@
 
 3. The server will check for the keyword RSVP along with amount of information before saving. Otherwise, an error message will appear. 
 
-4.. If an event has not been set up, you will be notified to check back later. 
+4. If an event has not been set up, you will be notified to check back later. 
 
 5. Once you have entered your information properly, it will remind you to save the date along with an updated number of attendees. 
 
