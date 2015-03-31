@@ -1,8 +1,8 @@
 # Welcome to the Hipster Meetup App!
 
-## This app was created to faciliate monthly meetups in the dev community in Carroll Gardens. If you would like to sign up, connect via telenet throuh IP addresss: 45.55.155.149 and port 3000.
+### This app was created to faciliate monthly meetups in the dev community in Carroll Gardens. If you would like to sign up, connect via telenet throuh IP addresss: 45.55.155.149 and port 3000.
 
-### This app will do the following: 
+#### This app will do the following: 
 
 1. The server will display a welcome message upon connection. 
 
@@ -15,4 +15,4 @@
 5. Once you have entered your information properly, it will remind you to save the date along with an updated number of attendees. 
 
 
-### Be sure to type everything in correctly and enjoy the events!
+#### Be sure to type everything in correctly and enjoy the events!
